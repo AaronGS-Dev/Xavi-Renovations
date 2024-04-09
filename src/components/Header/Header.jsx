@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+    const navigate = useNavigate()
+
+    const handleClick = (path) => {
+        navigate(path);
+      };
+      
   return (
     <div className='w-full h-1/6 border-4 border-black flex flex-col'>
         <div className='h-3/5 flex justify-center items-center'>
@@ -12,8 +20,8 @@ const Header = () => {
             
         </div>
         <div className='h-2/5 w-full border border-black flex justify-center gap-5'>
-            <button>Página principal</button>
-            <button>Nuestros trabajos</button>
+            <button onClick={() => handleClick('/')}>Página principal</button>
+            <button onClick={() => handleClick('/ourwork')}>Nuestros trabajos</button>
             <button>Sobre nosotros</button>
             <button>Nuestro proceso</button>
             <button>Contáctanos</button>
