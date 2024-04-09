@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
-      <h1>Aaron mariquita</h1>
+    <div className='bg-black'>
+      <h1 className='text-red-900'>Aaron mariquita</h1>
+    </div>
     </>
   )
 }
