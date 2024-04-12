@@ -2,7 +2,7 @@ import React from 'react'
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 const AboutUs = () => {
-    const { setActiveLink } = useActiveLink();
+    const { setActiveLink, activeLink } = useActiveLink();
     setActiveLink('/about')
 
   return (

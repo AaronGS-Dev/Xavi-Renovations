@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home';
 import Reform from "../pages/Reform/Reform";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
+import OurProcess from "../pages/OurProcess/OurProcess";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <AboutUs/>
+            },
+            {
+                path: '/process',
+                element: <OurProcess/>
             }
         ]
     }

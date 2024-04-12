@@ -9,7 +9,7 @@ const Reform = () => {
     const [imageView, setImageView] = useState(false)
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const {id} = useParams();
-    const { setActiveLink } = useActiveLink();
+    const { setActiveLink, activeLink } = useActiveLink();
     setActiveLink('/ourwork')
 
     useEffect(() => {

@@ -4,7 +4,7 @@ import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 const Header = () => {
     const navigate = useNavigate()
-    const { activeLink } = useActiveLink();
+    const { setActiveLink, activeLink } = useActiveLink();
 
     const handleClick = (path) => {
         navigate(path);
@@ -23,7 +23,7 @@ const Header = () => {
             <button className={activeLink === '/' ? 'font-bold' : ''} onClick={() => handleClick('/')}>Página principal</button>
             <button className={activeLink === '/ourwork' ? 'font-bold' : ''} onClick={() => handleClick('/ourwork')}>Nuestros trabajos</button>
             <button className={activeLink === '/about' ? 'font-bold' : ''} onClick={() => handleClick('/about')}>Sobre nosotros</button>
-            <button>Nuestro proceso</button>
+            <button className={activeLink === '/process' ? 'font-bold' : ''} onClick={() => handleClick('/process')}>Nuestro proceso</button>
             <button className={activeLink === '/contact' ? 'font-bold' : ''} onClick={() => handleClick('/contact')}>Contáctanos</button>
         </div>
     </div>

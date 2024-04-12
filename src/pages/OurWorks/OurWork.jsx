@@ -6,7 +6,7 @@ import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 
 const OurWork = () => {
-  const { setActiveLink } = useActiveLink();
+  const { setActiveLink, activeLink } = useActiveLink();
   setActiveLink('/ourwork')
 
   const showRenov = () => {
@@ -18,8 +18,9 @@ const OurWork = () => {
 
   return (
     <div className='h-full w-full flex flex-col items-center '>
-        <h1 className='h-[10%] flex justify-center items-center'>Our Works</h1>
-        <div id='work-display' className='h-[85%] w-[85%] flex flex-wrap justify-center overflow-auto gap-2'>{showRenov()}</div>
+      <div className='h-[90%] w-[80%] flex justify-center items-center'>
+        <div id='work-display' className='h-[85%] w-full flex flex-wrap justify-center overflow-auto gap-2'>{showRenov()}</div>
+      </div>
     </div>
   )
 }

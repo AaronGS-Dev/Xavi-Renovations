@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 import './Home.css'
+
 const Home = () => {
- 
+  const { setActiveLink, activeLink } = useActiveLink();
+  setActiveLink('/') 
   return (
     <main className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full overflow-y-scroll relative">

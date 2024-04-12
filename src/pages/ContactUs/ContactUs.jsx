@@ -7,7 +7,7 @@ import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 
 const ContactUs = () => {
-    const { setActiveLink } = useActiveLink();
+    const { setActiveLink, activeLink } = useActiveLink();
     setActiveLink('/contact')
   return (
     <div className='h-full w-full flex flex-col items-center justify-center'>
