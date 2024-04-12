@@ -4,9 +4,12 @@ import {RouterProvider} from 'react-router-dom'
 import App from './pages/App/App.jsx'
 import './index.css'
 import router from './routers/index.router.jsx'
+import { ActiveLinkProvider } from './context/ActiveLinkContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <ActiveLinkProvider>
+      <RouterProvider router={router}/>
+    </ActiveLinkProvider>
   </React.StrictMode>,
 )

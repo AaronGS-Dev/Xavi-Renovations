@@ -1,11 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 
 const Header = () => {
     const navigate = useNavigate()
+    const { setActiveLink, activeLink } = useActiveLink();
 
     const handleClick = (path) => {
+        setActiveLink(path)
         navigate(path);
       };
       
@@ -20,8 +23,8 @@ const Header = () => {
             
         </div>
         <div className='h-2/5 w-full border border-black flex justify-center gap-5'>
-            <button onClick={() => handleClick('/')}>Página principal</button>
-            <button onClick={() => handleClick('/ourwork')}>Nuestros trabajos</button>
+            <button className={activeLink === '/' ? 'font-bold' : ''} onClick={() => handleClick('/')}>Página principal</button>
+            <button className={activeLink === '/ourwork' ? 'font-bold' : ''} onClick={() => handleClick('/ourwork')}>Nuestros trabajos</button>
             <button>Sobre nosotros</button>
             <button>Nuestro proceso</button>
             <button>Contáctanos</button>
