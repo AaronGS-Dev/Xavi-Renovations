@@ -14,14 +14,20 @@ const Home = () => {
           </div>
           <div id='home2' className=" bg-green-200 flex flex-col justify-center items-center">
             <div>
+            <a href='#home1'><KeyboardArrowUpIcon/></a>
+            </div>
+            <div>
               <h1>Nuestros Servicios</h1>
             </div>
-            <a href='#home1'><KeyboardArrowUpIcon/></a>
+            <div>
             <a href='#home3'><KeyboardArrowDownIcon/></a>
+            </div>
         </div>
           <div id='home3' className=" bg-yellow-200 flex flex-col justify-center items-center">
             <p>Contenido del Home 3</p>
+            <div>
             <a href='#home2'><KeyboardArrowUpIcon/></a>
+            </div>
           </div>
       </div>
     </main> 
