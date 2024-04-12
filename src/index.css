@@ -9,4 +9,12 @@
 
 #root {
   height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  /* Otros estilos específicos de h1 */
 }

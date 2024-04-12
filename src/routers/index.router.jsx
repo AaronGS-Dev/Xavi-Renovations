@@ -3,6 +3,7 @@ import App from "../pages/App/App";
 import OurWork from "../pages/OurWorks/OurWork";
 import Home from '../pages/Home/Home';
 import Reform from "../pages/Reform/Reform";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: '/reform/:id',
                 element: <Reform/>
+            },
+            {
+                path: '/contact',
+                element: <ContactUs/>
             }
         ]
     }
