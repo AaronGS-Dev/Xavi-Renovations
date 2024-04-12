@@ -1,11 +1,3 @@
-#work-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    grid-auto-rows: minmax(400px, auto);   /* Altura mínima de 100px, se expande automáticamente */
-    column-gap: 10px;
-    row-gap: 10px;   
-}
-
 #work-display::-webkit-scrollbar {
     display: none;
   }
