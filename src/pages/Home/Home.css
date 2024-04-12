@@ -1,0 +1,14 @@
+#containerHome {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory; 
+}
+
+#home1, #home2, #home3 {
+    scroll-snap-align: center;   
+    height: 100%; 
+    flex-shrink: 0; 
+}
