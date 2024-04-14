@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import renovations from '../../assets/renovations.json'
+import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
+
 
 const Reform = () => {
     const [reform, setReform] = useState({})
     const [imageView, setImageView] = useState(false)
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const {id} = useParams();
+    const { setActiveLink, activeLink } = useActiveLink();
+    setActiveLink('/ourwork')
 
     useEffect(() => {
         const findById = (id) => {
@@ -31,7 +35,7 @@ const Reform = () => {
             const result = reform.photos.map((photo, index) => {
               return (
               <div>
-                <img src={photo} alt="" className='object-cover size-[300px] cursor-pointer' onClick={() => handlePhotoClick(photo)}/>
+                <img src={photo} alt="" className='object-cover size-[250px] cursor-pointer' onClick={() => handlePhotoClick(photo)}/>
                 {imageView && (<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50' onClick={handleClosePreview}>
                   <img src={selectedPhoto} alt="" />
                   </div>)}

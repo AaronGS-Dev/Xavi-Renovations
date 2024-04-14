@@ -1,0 +1,35 @@
+.grid-process {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-row: 1fr 1fr;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.icon-wrapper .text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease; /* Transiciones más suaves */
+}
+
+.icon-wrapper.hovered .text {
+    left: 120%; /* Ajusta el valor según sea necesario para el espacio deseado */
+    opacity: 1;
+}
+
+.icon-wrapper .icon {
+    transition: transform 0.5s ease; /* Transición más suave para el movimiento del ícono */
+}
+
+.icon-wrapper.hovered .icon {
+    transform: translateX(-10px); /* Desplazamiento más suave del ícono */
+}

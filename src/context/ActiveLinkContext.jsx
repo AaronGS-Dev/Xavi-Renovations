@@ -11,7 +11,7 @@ export const useActiveLink = () => {
 };
 
 export const ActiveLinkProvider = ({ children }) => {
-    const [activeLink, setActiveLink] = useState('/');
+    const [activeLink, setActiveLink] = useState('');
     return (
         <ActiveLinkContext.Provider value={{ activeLink, setActiveLink }}>
             {children}

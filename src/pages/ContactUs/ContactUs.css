@@ -1,0 +1,5 @@
+#grid-whatsApp, #grid-email, #grid-schedule {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-row: 1fr 1fr;
+}
