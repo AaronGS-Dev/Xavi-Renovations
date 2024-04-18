@@ -4,6 +4,7 @@ import renovations from '../../assets/renovations.json'
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import './Reform.css'
 
 
 const Reform = () => {
@@ -11,8 +12,12 @@ const Reform = () => {
     const [imageView, setImageView] = useState(false)
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const {id} = useParams();
+    const [photoIndex, setPhotoIndex] = useState()
     const { setActiveLink, activeLink } = useActiveLink();
-    setActiveLink('/ourwork')
+    useEffect(() => {
+      setActiveLink('/ourwork')
+    },[])
+    
 
     useEffect(() => {
         const findById = (id) => {
@@ -22,29 +27,59 @@ const Reform = () => {
         findById(id)
     })
 
+    useEffect(() => {
+      const handleKeyDown = (event) => {
+          if (imageView) {
+              switch (event.key) {
+                  case 'ArrowLeft':
+                      handleLeftClick();
+                      break;
+                  case 'ArrowRight':
+                      handleRightClick();
+                      break;
+                  default:
+                      break;
+              }
+          }
+      };
+
+      document.addEventListener('keydown', handleKeyDown);
+
+      return () => {
+          document.removeEventListener('keydown', handleKeyDown);
+      };
+  }, [imageView, photoIndex, reform.photos]);
+
     const handlePhotoClick = (index) => {
       setSelectedPhoto(reform.photos[index]);
       setImageView(true);
+      setPhotoIndex(index)
     };
 
     const handleClosePreview = () => {
       setSelectedPhoto(null);
       setImageView(false);
     };
+
+    const handleLeftClick = () => {
+      const previousIndex = photoIndex === 0 ? reform.photos.length - 1 : photoIndex - 1;
+      setPhotoIndex(previousIndex);
+      setSelectedPhoto(reform.photos[previousIndex]);
+    }
+
+    const handleRightClick = () => {
+      const nextIndex = photoIndex === reform.photos.length - 1 ? 0 : photoIndex + 1;
+      setPhotoIndex(nextIndex);
+      setSelectedPhoto(reform.photos[nextIndex]);
+    }
+
     
     const showPhotos= () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
-              <div>
-                <img src={photo} alt="" className='object-cover size-[250px] cursor-pointer' onClick={() => handlePhotoClick(index)}/>
-                {imageView && (
-                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-50' onClick={handleClosePreview}>
-                  <KeyboardArrowLeftIcon sx={{ fontSize: 50 }}/>
-                  <img src={selectedPhoto} alt="" />
-                  <KeyboardArrowRightIcon sx={{ fontSize: 50 }}/>
-                </div>
-                )}
+              <div key={index} className='size-[250px]'>
+                <img src={photo}  alt="" className='object-cover size-[250px] cursor-zoom-in' onClick={() => handlePhotoClick(index)}/>
               </div>
             )
             })
@@ -55,16 +90,29 @@ const Reform = () => {
       }
 
   return (
-    <div className='bg-blue-100 h-full w-full flex flex-col items-center justify-center'>
-        <div className='h-[95%] w-[80%] flex flex-wrap items-center justify-evenly bg-blue-300 overflow-auto gap-2'>
-            <div className='h-[95%] w-[70%] flex flex-wrap bg-blue-500 overflow-auto gap-2'>
+    <div className='h-full w-full flex flex-col items-center justify-center'>
+        <div className='h-[95%] w-[80%] flex items-center justify-evenly overflow-auto gap-2'>
+            <div id='reform-photo-display' className='h-[95%] w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
                 {showPhotos()}
             </div>
-            <div className='h-[95%] w-[25%] bg-blue-400 p-5'>
+            <div className='h-[95%] w-[25%]'>
               <h1 className='h-1/5'>{reform.name}</h1>
               <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p>
             </div>
         </div>
+        {imageView && (
+                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-50' onClick={handleClosePreview}>
+                  <KeyboardArrowLeftIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
+                    e.stopPropagation();
+                    handleLeftClick()
+                    }}/>
+                  <img src={selectedPhoto} alt="" />
+                  <KeyboardArrowRightIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
+                    e.stopPropagation();
+                    handleRightClick()
+                    }}/>
+                </div>
+                )}
     </div>
   )
 }
