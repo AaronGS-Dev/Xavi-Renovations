@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import renovations from '../../assets/renovations.json'
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 
 const Reform = () => {
@@ -20,8 +22,8 @@ const Reform = () => {
         findById(id)
     })
 
-    const handlePhotoClick = (photo) => {
-      setSelectedPhoto(photo);
+    const handlePhotoClick = (index) => {
+      setSelectedPhoto(reform.photos[index]);
       setImageView(true);
     };
 
@@ -35,10 +37,14 @@ const Reform = () => {
             const result = reform.photos.map((photo, index) => {
               return (
               <div>
-                <img src={photo} alt="" className='object-cover size-[250px] cursor-pointer' onClick={() => handlePhotoClick(photo)}/>
-                {imageView && (<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50' onClick={handleClosePreview}>
+                <img src={photo} alt="" className='object-cover size-[250px] cursor-pointer' onClick={() => handlePhotoClick(index)}/>
+                {imageView && (
+                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-50' onClick={handleClosePreview}>
+                  <KeyboardArrowLeftIcon sx={{ fontSize: 50 }}/>
                   <img src={selectedPhoto} alt="" />
-                  </div>)}
+                  <KeyboardArrowRightIcon sx={{ fontSize: 50 }}/>
+                </div>
+                )}
               </div>
             )
             })
