@@ -15,16 +15,38 @@ const Home = () => {
             <a href='#home2'><KeyboardArrowDownIcon/></a>
             </div>
           </div>
-          <div id='home2' className=" bg-green-200 flex flex-col justify-center items-center">
-            <div>
+          <div id='home2' className="bg-green-200 flex flex-col justify-center items-center content-start">
+          <div>
             <a href='#home1'><KeyboardArrowUpIcon/></a>
-            </div>
+          </div>
+          <div id='service' className='bg-white flex flex-col text-center justify-center rounded ml-auto'>
             <div>
-              <h1>Nuestros Servicios</h1>
+              <h1 className='p-6'>Nuestros Servicios</h1>
             </div>
-            <div>
-            <a href='#home3'><KeyboardArrowDownIcon/></a>
+            <div className="flex justify-center items-center">
+              <img src="\public\image\maintenance.png" className='w-1/6 h-auto' alt="" />
+              <p>Ofrecemos los siguientes servicios</p>
             </div>
+            <div className="flex justify-center items-center">
+              <p>Grandes obras de renovación</p>
+              <img src="\public\image\renovation.png" className='w-1/6 h-auto' alt="" />
+            </div>
+            <div className="flex justify-center items-center">
+              <img src="\public\image\renovation-2.png" className='w-1/6 h-auto' alt="" />
+              <p>Hermosa carpintería</p>
+            </div> 
+            <div className="flex justify-center items-center">
+              <p>Trabajos eléctricos seguros</p>
+              <img src="\public\image\electrical-service.png" className='w-1/6 h-auto' alt="" />
+            </div>
+            <div className="flex justify-center items-center">
+              <img src="\public\image\plumbing.png" className='w-1/6 h-auto' alt="" />
+              <p>Fontaneria a fondo</p>
+            </div>
+          </div>
+              <div>
+              <a href='#home3'><KeyboardArrowDownIcon/></a>
+              </div>
         </div>
           <div id='home3' className=" bg-yellow-200 flex flex-col justify-center items-center">
             <p>Contenido del Home 3</p>
