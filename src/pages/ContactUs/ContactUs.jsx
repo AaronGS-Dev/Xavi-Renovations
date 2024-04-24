@@ -4,13 +4,18 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
+import { useTranslation } from 'react-i18next';
+
 
 
 const ContactUs = () => {
     const { setActiveLink, activeLink } = useActiveLink();
     setActiveLink('/contact')
+    const { t } = useTranslation()
+
   return (
     <div className='h-full w-full flex flex-col items-center justify-center'>
+        <div>{t('description.part2')}</div>
         <div className='h-[90%] w-[75%] flex items-center'>
             <div className='h-[90%] w-[60%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] flex justify-center items-center'>
                 <form action="" className='h-[90%] w-[65%] bg-orange-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
