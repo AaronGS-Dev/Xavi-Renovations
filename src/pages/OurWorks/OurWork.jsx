@@ -18,8 +18,8 @@ const OurWork = () => {
 
   return (
     <div className='h-full w-full flex flex-col items-center '>
-      <div className='h-[90%] w-[90%] flex justify-center items-center'>
-        <div id='work-display' className='h-[85%] w-full flex flex-wrap justify-center overflow-auto gap-2'>{showRenov()}</div>
+      <div className='h-[95%] w-[90%] flex justify-center items-end'>
+        <div id='work-display' className='h-[95%] w-full flex flex-wrap justify-center overflow-auto gap-2'>{showRenov()}</div>
       </div>
     </div>
   )
