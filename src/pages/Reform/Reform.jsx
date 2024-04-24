@@ -78,8 +78,8 @@ const Reform = () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
-              <div key={index} className='size-[250px]'>
-                <img src={photo}  alt="" className='object-cover size-[250px] cursor-zoom-in' onClick={() => handlePhotoClick(index)}/>
+              <div key={index} className='size-[250px] relative'>
+                <img src={photo}  alt="" className={`object-cover size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
               </div>
             )
             })
