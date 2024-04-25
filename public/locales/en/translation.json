@@ -7,5 +7,12 @@
   "languages": {
     "english": "English",
     "spanish": "Spanish"
+  },
+  "header": {
+    "home": "Página principal",
+    "works": "Nuestros trabajos",
+    "about": "Sobre nosotros",
+    "process": "Nuestro proceso",
+    "contact": "Contáctanos"
   }
 }

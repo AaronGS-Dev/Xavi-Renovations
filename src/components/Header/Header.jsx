@@ -2,10 +2,13 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 import { Menu } from '../Menu/Menu.jsx';
+import { useTranslation } from 'react-i18next';
+
 
 const Header = () => {
     const navigate = useNavigate()
     const { setActiveLink, activeLink } = useActiveLink();
+    const { t } = useTranslation()
 
     const handleClick = (path) => {
         navigate(path);
