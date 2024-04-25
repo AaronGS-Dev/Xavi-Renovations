@@ -19,18 +19,17 @@ const Header = () => {
         <div className='h-3/5 flex justify-center items-center cursor-pointer' onClick={() => handleClick('/')}>
             <div className='flex flex-col items-center justify-center'>
                 <h1 className='text-4xl'>XaviRenovaties</h1>
-                <h2>Reformas generales</h2>
+                <h2>{t('subtitle')}</h2>
             </div>
             <img src="../public/image/logo2.png" className='h-full' />  
         </div>
         <div className='h-2/5 w-full flex justify-center gap-5'>
-            <button className={activeLink === '/' ? 'font-bold' : ''} onClick={() => handleClick('/')}>Página principal</button>
-            <button className={activeLink === '/ourwork' ? 'font-bold' : ''} onClick={() => handleClick('/ourwork')}>Nuestros trabajos</button>
-            <button className={activeLink === '/about' ? 'font-bold' : ''} onClick={() => handleClick('/about')}>Sobre nosotros</button>
-            <button className={activeLink === '/process' ? 'font-bold' : ''} onClick={() => handleClick('/process')}>Nuestro proceso</button>
-            <button className={activeLink === '/contact' ? 'font-bold' : ''} onClick={() => handleClick('/contact')}>Contáctanos</button>
+            <button className={activeLink === '/' ? 'font-bold' : ''} onClick={() => handleClick('/')}>{t('header.home')}</button>
+            <button className={activeLink === '/ourwork' ? 'font-bold' : ''} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
+            <button className={activeLink === '/about' ? 'font-bold' : ''} onClick={() => handleClick('/about')}>{t('header.about')}</button>
+            <button className={activeLink === '/process' ? 'font-bold' : ''} onClick={() => handleClick('/process')}>{t('header.process')}</button>
+            <button className={activeLink === '/contact' ? 'font-bold' : ''} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
             <Menu/>
-
         </div>
     </div>
   )

@@ -1,19 +1,45 @@
 {
-    "title": "Bienvenidos a i18n",
-    "description": {
-      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-      "part2": "Cambia entre los idiomas con los botones"
-    },
     "languages": {
       "english": "Inglés",
       "spanish": "Español"
     },
+    "subtitle" : "Reformas generales",
     "header": {
-      "home": "Home page",
-      "works": "Our works",
-      "about": "About us",
-      "process": "Our Process",
-      "contact": "Contac us"
+      "home": "Página principal",
+      "works": "Nuestros trabajos",
+      "about": "Sobre nosotros",
+      "process": "Nuestro proceso",
+      "contact": "Contáctanos"
+    },
+    "about": {
+      "title": "Bienvenido a Xavi Renovaties",
+      "description": "Xavi Renovaties lleva muchos años en activo y hace realidad tu deseo de reforma. Siempre decimos: La calidad es el orgullo de la artesanía. Ponemos al cliente en primer lugar, escuchando activamente sus deseos y brindándole asesoramiento profesional adecuado sobre el proyecto a realizar. Nuestras actividades comerciales consisten en trabajos de renovación y mantenimiento. Puede contactar con nosotros para trabajos de reforma y mantenimiento de cualquier naturaleza y tamaño. Xavi Renovations trabaja con un equipo permanente que incluye diversos especialistas."
+    },
+    "contact": {
+      "form": {
+        "title": "CONTÁCTANOS",
+        "name": "Nombre",
+        "phone": "Número de teléfono",
+        "email": "Email",
+        "message": "Escribe tu pregunta",
+        "submit": "Enviar"
+      },
+      "info": "Información de contacto",
+      "phone": "Teléfono",
+      "schedule": {
+        "title": "Horario",
+        "week": "Lunes - Viernes",
+        "weekend": "Sábado y Domingo",
+        "close": "Cerrado"
+      }
+    },
+    "process": {
+      "title": "Nuestro proceso Xavi Renovaties",
+      "description": "Si estás pensando en reformar, ¡has venido al lugar indicado! Xavi Renovatie mantendrá una conversación contigo en la que identificaremos y describiremos claramente tus deseos.",
+      "first": "Mantendremos una conversación contigo en la que identificaremos y describiremos claramente sus deseos.", 
+      "second": "El equipo crea un asesoramiento adecuado y profesional en un plan de reforma.",
+      "third": "Todos los trabajos y costes se pueden planificar basándose en el plan de reforma.",
+      "fourth": "Después de la aprobación del cliente, se iniciará la reforma."
     }
   }
   

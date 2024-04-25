@@ -101,12 +101,12 @@ const Reform = () => {
             </div>
         </div>
         {imageView && (
-                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-50' onClick={handleClosePreview}>
+                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-70' onClick={handleClosePreview}>
                   <KeyboardArrowLeftIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleLeftClick()
                     }}/>
-                  <img src={selectedPhoto} alt="" />
+                  <img src={selectedPhoto} className='h-full' alt="" />
                   <KeyboardArrowRightIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleRightClick()
