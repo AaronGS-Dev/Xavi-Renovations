@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
+import { Menu } from '../Menu/Menu.jsx';
 
 const Header = () => {
     const navigate = useNavigate()
@@ -25,6 +26,8 @@ const Header = () => {
             <button className={activeLink === '/about' ? 'font-bold' : ''} onClick={() => handleClick('/about')}>Sobre nosotros</button>
             <button className={activeLink === '/process' ? 'font-bold' : ''} onClick={() => handleClick('/process')}>Nuestro proceso</button>
             <button className={activeLink === '/contact' ? 'font-bold' : ''} onClick={() => handleClick('/contact')}>Contáctanos</button>
+            <Menu/>
+
         </div>
     </div>
   )
