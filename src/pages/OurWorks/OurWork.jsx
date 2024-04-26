@@ -6,15 +6,24 @@ import { useActiveLink } from '../../context/ActiveLinkContext.jsx';
 
 
 const OurWork = () => {
-  const { setActiveLink, activeLink } = useActiveLink();
+  const { setActiveLink, activeLink, langCode, setLangCode } = useActiveLink();
   setActiveLink('/ourwork')
 
   const showRenov = () => {
     const result = renovations.map((renovation, index) => {
-      return <RenovCard name={renovation.name} cover={renovation.cover} key={index} id={renovation.id}/>
+      const handleNameLang = () => {
+        if (langCode === 'es') {
+          return renovation.name_es;
+        } else if (langCode === 'en') {
+          return renovation.name_en
+        }
+      }
+      return <RenovCard name={handleNameLang()} cover={renovation.cover} key={index} id={renovation.id}/>
     })
     return result
   }
+
+
 
   return (
     <div className='h-full w-full flex flex-col items-center '>

@@ -13,7 +13,7 @@ const Reform = () => {
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const {id} = useParams();
     const [photoIndex, setPhotoIndex] = useState()
-    const { setActiveLink, activeLink } = useActiveLink();
+    const { setActiveLink, activeLink, langCode, setLangCode } = useActiveLink();
     useEffect(() => {
       setActiveLink('/ourwork')
     },[])
@@ -72,14 +72,13 @@ const Reform = () => {
       setPhotoIndex(nextIndex);
       setSelectedPhoto(reform.photos[nextIndex]);
     }
-
     
     const showPhotos= () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
               <div key={index} className='size-[250px] relative'>
-                <img src={photo}  alt="" className={`object-cover size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
+                <img src={photo} alt="" className={`object-cover size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
               </div>
             )
             })
@@ -88,6 +87,14 @@ const Reform = () => {
             return null
         }
       }
+    
+    const handleNameLang = () => {
+      if (langCode === 'es') {
+        return reform.name_es;
+      } else if (langCode === 'en') {
+        return reform.name_en
+      }
+    }
 
   return (
     <div className='h-full w-full flex flex-col items-center justify-center'>
@@ -96,7 +103,7 @@ const Reform = () => {
                 {showPhotos()}
             </div>
             <div className='h-[95%] w-[25%]'>
-              <h1 className='h-1/5'>{reform.name}</h1>
+              <h1 className='h-1/5'>{handleNameLang()}</h1>
               <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p>
             </div>
         </div>

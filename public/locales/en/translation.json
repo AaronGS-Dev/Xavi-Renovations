@@ -21,7 +21,7 @@
       "name": "Name",
       "phone": "Phone number",
       "email": "Email",
-      "message": "Ask your question",
+      "message": "Write your message...",
       "submit": "Send"
     },
     "info": "Contact information",

@@ -1,11 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { useActiveLink } from '../../context/ActiveLinkContext';
 import { useTranslation } from 'react-i18next';
 
 export const Menu = () => {
     const { i18n, t } = useTranslation();
+    const { langCode, setLangCode} = useActiveLink();
 
     const onChangeLang = (e) => {
         const lang_code = e.target.value
+        setLangCode(lang_code)
         i18n.changeLanguage(lang_code)
     }
 

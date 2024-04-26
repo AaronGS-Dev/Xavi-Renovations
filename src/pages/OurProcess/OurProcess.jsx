@@ -25,25 +25,25 @@ const OurProcess = () => {
     const handleClick = () => {
         setIsClicked(true);
         setTimeout(() => {
-            setTextAppear(!textAppear)
+            setTextAppear(true)
         }, 500);
     };
     const handleClick2 = () => {
         setIsClicked2(true);
         setTimeout(() => {
-            setTextAppear2(!textAppear2)
+            setTextAppear2(true)
         }, 500);
     };
     const handleClick3 = () => {
         setIsClicked3(true);
         setTimeout(() => {
-            setTextAppear3(!textAppear3)
+            setTextAppear3(true)
         }, 500);
     };
     const handleClick4 = () => {
         setIsClicked4(true);
         setTimeout(() => {
-            setTextAppear4(!textAppear4)
+            setTextAppear4(true)
         }, 500);
     };
     useEffect(()=>{
@@ -58,9 +58,9 @@ const OurProcess = () => {
     return (
         <div className='h-full w-full flex flex-col items-center justify-center'>
             <div className='h-[90%] w-[80%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] flex justify-center items-center'>
-                <div className='h-[90%] w-[80%] bg-blue-100 flex flex-col items-center gap-4 p-8'>
+                <div className='h-[90%] w-[70%] bg-yellow-200 bg-opacity-90 flex flex-col items-center gap-4 p-8'>
                     <h1 className='text-4xl'>{t('process.title')}</h1>
-                    <p className='w-[70%] text-[20px]'>{t('process.description')}</p>
+                    <p className='w-[80%] text-[20px]'>{t('process.description')}</p>
                     <div className='h-full w-[80%] flex flex-col justify-evenly'>
                         <div className='flex relative  z-10 h-[50px] '>
                             <div className={`absolute ${isClicked ? 'left-[0%]' : 'left-[50%]'} transition-all duration-1000`}>

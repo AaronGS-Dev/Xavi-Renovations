@@ -1,7 +1,8 @@
 [
     {
         "id":1,
-        "name":"Reforma 1",
+        "name_es":"Reforma 1",
+        "name_en":"Renovation 1",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072688/XaviRenovaties/Reforma%201/17ccf6fd-d193-415e-a6b7-80a30439def3_qnawta.jpg",
@@ -11,6 +12,7 @@
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072689/XaviRenovaties/Reforma%201/8090eb18-535e-4d69-8a6a-ffc36e1de07e_yjvg3g.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072686/XaviRenovaties/Reforma%201/2f44efa1-46ba-42b8-b329-1dee609fe4a2_e4bdha.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072685/XaviRenovaties/Reforma%201/1ec909e5-8c34-461d-ac40-8fb2b7d382f7_faol2r.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714125221/XaviRenovaties/Reforma%201/4226ceb6-cb0f-42f3-8574-b3cb68654fc3_uhqbzt.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072686/XaviRenovaties/Reforma%201/4d336d47-1488-4958-9922-5d36f014a9e2_nktda1.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072685/XaviRenovaties/Reforma%201/c3c9e693-3668-4398-8c84-8314d795f94c_ymwauz.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072687/XaviRenovaties/Reforma%201/9f471187-af91-4841-b7ba-1dba2e5e0f00_fq7lk4.jpg",
@@ -22,7 +24,8 @@
     },
     {
         "id":2,
-        "name":"Reforma 1",
+        "name_es":"Reforma 1",
+        "name_en":"Renovation 1",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
@@ -47,7 +50,8 @@
     },
     {
         "id":3,
-        "name":"Reforma 1",
+        "name_es":"Reforma 1",
+        "name_en":"Renovation 1",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
@@ -56,7 +60,8 @@
     },
     {
         "id":4,
-        "name":"Reforma 1",
+        "name_es":"Reforma 1",
+        "name_en":"Renovation 1",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
@@ -65,7 +70,8 @@
     },
     {
         "id":5,
-        "name":"Reforma 1",
+        "name_es":"Reforma 1",
+        "name_en":"Renovation 1",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg",

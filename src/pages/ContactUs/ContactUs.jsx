@@ -17,13 +17,13 @@ const ContactUs = () => {
     <div className='h-full w-full flex flex-col items-center justify-center'>
         <div className='h-[90%] w-[75%] flex items-center'>
             <div className='h-[90%] w-[60%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] flex justify-center items-center'>
-                <form action="" className='h-[90%] w-[65%] bg-orange-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
+                <form action="" className='h-[90%] w-[65%] bg-yellow-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
                     <h1 className='flex justify-center'>{t('contact.form.title')}</h1>
                     <input type="text" placeholder={t('contact.form.name')} className='w-[70%] h-[30px] rounded pl-2'/>
                     <input type="text" placeholder={t('contact.form.phone')} className='w-[70%] h-[30px] rounded pl-2'/>
                     <input type="text" placeholder={t('contact.form.email')} className='w-[70%] h-[30px] rounded pl-2'/>
                     <textarea type="text" placeholder={t('contact.form.message')} className='w-[70%] h-[100px] rounded pl-2 resize-none'/>
-                    <button type="submit" className=' w-36 h-10 rounded bg-orange-300'>{t('contact.form.submit')}</button>
+                    <button type="submit" className=' w-36 h-10 rounded-2xl bg-[#F2E500] shadow-md'>{t('contact.form.submit')}</button>
                 </form>
             </div>
             <div className='h-[90%] w-[40%] 0'>
