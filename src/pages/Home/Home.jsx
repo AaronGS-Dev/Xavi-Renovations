@@ -8,13 +8,13 @@ const Home = () => {
   const { setActiveLink, activeLink } = useActiveLink();
   setActiveLink('/') 
   return (
-    <main className='h-full w-full' >
+    <main id='mainHome' className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full  overflow-y-scroll relative">
           <div id='home1' className=" bg-blue-200 flex flex-col items-center justify-between">
         <div></div>
           <Home1/>
           </div>
-          <div id='home2' className="bg-green-200 flex flex-col justify-center items-center content-start">
+          <div id='home2' className="bg-green-200 ">
             <Home2/>
           </div>
           <div id='home3' className=" bg-yellow-200 flex flex-col justify-center items-center">
