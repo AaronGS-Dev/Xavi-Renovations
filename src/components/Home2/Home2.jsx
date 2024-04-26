@@ -4,11 +4,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Home2 = () => {
   return (
-    <div>
-         <div>
+    <main>
+         <div className='top-0 flex justify-center'>
             <a href='#home1'><KeyboardArrowUpIcon/></a>
           </div>
-          <div id='service' className='bg-white flex flex-col text-center justify-center rounded ml-auto'>
+          <div id='service' className='bg-white flex flex-col text-center w-4/5	h-full rounded ml-auto'>
             <div>
               <h1 className='p-6'>Nuestros Servicios</h1>
             </div>
@@ -33,10 +33,10 @@ const Home2 = () => {
               <p>Fontaneria a fondo</p>
             </div>
           </div>
-              <div>
-              <a href='#home3'><KeyboardArrowDownIcon/></a>
-              </div>
-    </div>
+          <div className='bottom-0 flex justify-center'>
+              <a href='#home3' ><KeyboardArrowDownIcon/></a>
+          </div>
+    </main>
   )
 }
 

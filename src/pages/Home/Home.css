@@ -2,6 +2,10 @@
     scroll-snap-type: y mandatory; 
 }
 
+#containerHome::-webkit-scrollbar{
+    display: none;
+}
+
 #home1, #home2, #home3 {
     scroll-snap-align: center;   
     height: 100%; 
