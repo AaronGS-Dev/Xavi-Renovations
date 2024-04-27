@@ -14,7 +14,7 @@ const Home = () => {
         <div></div>
           <Home1/>
           </div>
-          <div id='home2' className="bg-green-200 ">
+          <div id='home2' className="bg-green-200 flex flex-col items-center justify-between ">
             <Home2/>
           </div>
           <div id='home3' className=" bg-yellow-200 flex flex-col justify-center items-center">
