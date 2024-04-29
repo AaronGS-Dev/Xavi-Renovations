@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <img src="../public/image/logo2.png" className='h-full' />  
         </div>
-        <div className='h-2/5 w-full flex justify-center gap-5'>
+        <div className='h-2/5 xl:w-full flex flex-wrap justify-center gap-5'>
             <button className={activeLink === '/' ? 'font-bold' : ''} onClick={() => handleClick('/')}>{t('header.home')}</button>
             <button className={activeLink === '/ourwork' ? 'font-bold' : ''} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
             <button className={activeLink === '/about' ? 'font-bold' : ''} onClick={() => handleClick('/about')}>{t('header.about')}</button>

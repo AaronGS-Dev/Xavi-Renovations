@@ -50,7 +50,7 @@ const ContactUs = () => {
             <div className='h-[90%] w-full overflow-y-auto flex flex-col items-center
                             xl:w-[75%] xl:flex-row xl:overflow-y-hidden'>
                 <div className='w-full bg-[url(https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg)] flex justify-center items-center
-                            xl:w-[60%]'>
+                            xl:w-[60%] xl:h-[90%]'>
                     <form onSubmit={handleSubmit} className='h-[90%] w-[65%] bg-yellow-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
                         <h1 className='flex justify-center'>{t('contact.form.title')}</h1>
                         <input

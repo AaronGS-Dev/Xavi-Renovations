@@ -10,15 +10,15 @@ const AboutUs = () => {
     const { t } = useTranslation();
 
   return (
-    <div className='h-full w-full flex flex-col items-center justify-center'>
-        <div className='h-[90%] w-[75%] flex items-center'>
-            <div className='h-[90%] w-[60%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] flex justify-center items-center'>
+    <div className='h-full w-full flex items-center justify-center'>
+        <div className='h-[90%] w-[75%] flex flex-col-reverse xl:flex-row items-center gap-8'>
+            <div className='h-[50%] xl:h-[90%] w-[95%] xl:w-[60%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] bg-contain  xl:bg-auto xl:bg-center flex justify-center items-center'>
             </div>
-            <div className='h-[90%] w-[40%] 0'>
+            <div className='h-[50%] xl:h-[90%] w-[95%] xl:w-[40%]'>
                 <div className='h-[20%] w-full pl-8 pt-4 flex flex-col justify-center gap-4'>
                     <h1>{t('about.title')}</h1>
                 </div>
-                <div className='h-[80%] w-[70%] pl-8 pt-4  flex flex-col gap-4'>
+                <div className='h-[80%] w-[95%] xl:w-[70%] pl-8 pt-4  flex flex-col gap-4'>
                     <p>{t('about.description')}</p>
                 </div>
             </div>

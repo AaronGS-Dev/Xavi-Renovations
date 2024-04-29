@@ -77,8 +77,8 @@ const Reform = () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
-              <div key={index} className='size-[250px] relative'>
-                <img src={photo} alt="" className={`object-cover size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
+              <div key={index} className='size-[200px] xl:size-[250px] relative'>
+                <img src={photo} alt="" className={`object-cover size-[200px] xl:size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
               </div>
             )
             })
@@ -97,12 +97,15 @@ const Reform = () => {
     }
 
   return (
-    <div className='h-full w-full flex flex-col items-center justify-center'>
-        <div className='h-[95%] w-[80%] flex items-center justify-evenly overflow-auto gap-2'>
-            <div id='reform-photo-display' className='h-[95%] w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
+    <div className='h-full w-full flex items-center justify-center'>
+        <div className='h-[95%] w-[80%] flex flex-col-reverse 
+                        xl:flex-row items-center xl:justify-evenly overflow-auto gap-2'>
+            <div id='reform-photo-display' className='h-[70%] w-[90%]
+                                                      xl:h-[95%] xl:w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
                 {showPhotos()}
             </div>
-            <div className='h-[95%] w-[25%]'>
+            <div className='h-[30%] 
+                            xl:w-[25%] xl:h-[95%] '>
               <h1 className='h-1/5'>{handleNameLang()}</h1>
               <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p>
             </div>
@@ -113,7 +116,7 @@ const Reform = () => {
                     e.stopPropagation();
                     handleLeftClick()
                     }}/>
-                  <img src={selectedPhoto} className='h-full' alt="" />
+                  <img src={selectedPhoto} className='h-[90%] xl:h-full' alt="" />
                   <KeyboardArrowRightIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleRightClick()
