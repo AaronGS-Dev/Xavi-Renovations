@@ -12,8 +12,9 @@ export const useActiveLink = () => {
 
 export const ActiveLinkProvider = ({ children }) => {
     const [activeLink, setActiveLink] = useState('');
+    const [langCode, setLangCode] = useState('en');
     return (
-        <ActiveLinkContext.Provider value={{ activeLink, setActiveLink }}>
+        <ActiveLinkContext.Provider value={{ activeLink, setActiveLink, langCode, setLangCode }}>
             {children}
         </ActiveLinkContext.Provider>
     );

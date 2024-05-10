@@ -13,7 +13,7 @@ const Reform = () => {
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const {id} = useParams();
     const [photoIndex, setPhotoIndex] = useState()
-    const { setActiveLink, activeLink } = useActiveLink();
+    const { setActiveLink, activeLink, langCode, setLangCode } = useActiveLink();
     useEffect(() => {
       setActiveLink('/ourwork')
     },[])
@@ -72,14 +72,13 @@ const Reform = () => {
       setPhotoIndex(nextIndex);
       setSelectedPhoto(reform.photos[nextIndex]);
     }
-
     
     const showPhotos= () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
-              <div key={index} className='size-[250px] relative'>
-                <img src={photo}  alt="" className={`object-cover size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
+              <div key={index} className='size-[200px] xl:size-[250px] relative'>
+                <img src={photo} alt="" className={`object-cover size-[200px] xl:size-[250px] z-0 cursor-zoom-in transform transition-transform hover:scale-[105%] ${imageView ? 'z-10' : ''}`} onClick={() => handlePhotoClick(index)}/>
               </div>
             )
             })
@@ -88,25 +87,36 @@ const Reform = () => {
             return null
         }
       }
+    
+    const handleNameLang = () => {
+      if (langCode === 'es') {
+        return reform.name_es;
+      } else if (langCode === 'en') {
+        return reform.name_en
+      }
+    }
 
   return (
-    <div className='h-full w-full flex flex-col items-center justify-center'>
-        <div className='h-[95%] w-[80%] flex items-center justify-evenly overflow-auto gap-2'>
-            <div id='reform-photo-display' className='h-[95%] w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
+    <div className='h-full w-full flex items-center justify-center'>
+        <div className='h-[95%] w-[80%] flex flex-col-reverse 
+                        xl:flex-row items-center xl:justify-evenly overflow-auto gap-2'>
+            <div id='reform-photo-display' className='h-[70%] w-[90%]
+                                                      xl:h-[95%] xl:w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
                 {showPhotos()}
             </div>
-            <div className='h-[95%] w-[25%]'>
-              <h1 className='h-1/5'>{reform.name}</h1>
+            <div className='h-[30%] 
+                            xl:w-[25%] xl:h-[95%] '>
+              <h1 className='h-1/5'>{handleNameLang()}</h1>
               <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p>
             </div>
         </div>
         {imageView && (
-                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-50' onClick={handleClosePreview}>
+                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-70' onClick={handleClosePreview}>
                   <KeyboardArrowLeftIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleLeftClick()
                     }}/>
-                  <img src={selectedPhoto} alt="" />
+                  <img src={selectedPhoto} className='h-[90%] xl:h-full' alt="" />
                   <KeyboardArrowRightIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleRightClick()

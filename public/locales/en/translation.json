@@ -1,18 +1,44 @@
 {
-  "title": "Welcome to react using react-i18next",
-  "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
-  },
   "languages": {
     "english": "English",
     "spanish": "Spanish"
   },
+  "subtitle" : "General renovations",
   "header": {
-    "home": "Página principal",
-    "works": "Nuestros trabajos",
-    "about": "Sobre nosotros",
-    "process": "Nuestro proceso",
-    "contact": "Contáctanos"
+    "home": "Home page",
+    "works": "Our works",
+    "about": "About us",
+    "process": "Our Process",
+    "contact": "Contact us"
+  },
+  "about": {
+    "title": "Welcome to Xavi Renovaties",
+    "description": "Xavi Renovaties has been in business for many years and makes your renovation wishes come true. We always say: Quality is the pride of craftsmanship. We put the customer first, actively listening to your wishes and providing you with appropriate professional advice on the project to be carried out. Our business activities consist of renovation and maintenance work. You can contact us for renovation and maintenance work of any nature and size. Xavi Renovations works with a permanent team that includes various specialists."
+  },
+  "contact": {
+    "form": {
+      "title": "CONTACT US",
+      "name": "Name",
+      "phone": "Phone number",
+      "email": "Email",
+      "message": "Write your message...",
+      "submit": "Send"
+    },
+    "info": "Contact information",
+    "phone": "Phone number",
+    "schedule": {
+      "title": "Schedule",
+      "week": "Monday - Friday",
+      "weekend": "Saturday y Domingo",
+      "close": "Closed"
+    }
+  },
+  "process": {
+    "title": "Our process in Xavi Renovaties",
+    "description": "If you are thinking of renovating, you have come to the right place! Xavi Renovatie will have a conversation with you in which we will clearly identify and describe your wishes.",
+    "first": "We will have a conversation with you in which we will clearly identify and describe your wishes.", 
+    "second": "The team creates an adequate and professional advice in a renovation plan.",
+    "third": "All work and costs can be planned based on the renovation plan",
+    "fourth": "After the client's approval, the renovation will start."
   }
 }
