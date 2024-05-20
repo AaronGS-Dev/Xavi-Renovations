@@ -24,8 +24,8 @@
     },
     {
         "id":2,
-        "name_es":"Reforma 1",
-        "name_en":"Renovation 1",
+        "name_es":"Reforma 2",
+        "name_en":"Renovation 2",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426798/XaviRenovaties/Reforma%202/IMG_1562-scaled_wudies.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426799/XaviRenovaties/Reforma%202/IMG_1558-scaled_aunq5f.jpg",
@@ -37,6 +37,22 @@
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426798/XaviRenovaties/Reforma%202/IMG_1549-scaled_uyfy8f.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426798/XaviRenovaties/Reforma%202/IMG_1541-scaled_i8o1iu.jpg",
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426798/XaviRenovaties/Reforma%202/IMG_1546-scaled_ywq1ar.jpg"
+        ]
+    },
+    {
+        "id":3,
+        "name_es":"Reforma 3",
+        "name_en":"Renovation 3",
+        "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595696/XaviRenovaties/Reforma%203/IMG_20240306_111028_rkmiyt.jpg",
+        "photos": [
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240116_115847_sblqpo.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240215_114317_p56z0i.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240219_140542_zqq6am.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595698/XaviRenovaties/Reforma%203/IMG_20240306_111039_exlzgt.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240219_140557_kmxck7.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595696/XaviRenovaties/Reforma%203/IMG_20240306_111032_ha16jj.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240219_140612_lujvch.jpg",
+            "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595696/XaviRenovaties/Reforma%203/IMG_20240306_111028_rkmiyt.jpg"
         ]
     }
     
