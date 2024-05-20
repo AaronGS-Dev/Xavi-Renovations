@@ -13,14 +13,16 @@ const Home = () => {
   return (
     <main id='mainHome' className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full  overflow-y-scroll relative">
-          <div id='home1' className=" bg-blue-200 flex flex-col items-center justify-between">
+          <div id='home1' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] bg-[url("../image/Home1.jpg")] 
+          bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center  flex flex-col items-center justify-between'>
         <div></div>
           <Home1/>
           <div className='bottom-0'>
     <a href='#home2' className=''><KeyboardArrowDownIcon/></a>
     </div>
           </div>
-          <div id='home2' className="bg-green-200 flex flex-col items-center justify-between ">
+          <div id='home2' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] bg-[url("../image/Home2.jpg")] 
+          bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col items-center justify-between '>
             <a href='#home1'><KeyboardArrowUpIcon/></a>
             <Slide>
             <Home2/>
@@ -28,7 +30,8 @@ const Home = () => {
             <a href='#home3' ><KeyboardArrowDownIcon/></a>
 
           </div>
-          <div id='home3' className=" bg-yellow-200 flex flex-col justify-center items-center">
+          <div id='home3' className=' h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] bg-[url("../image/Home3.jpg")] 
+          bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col justify-center items-center'>
           <a href='#home2'><KeyboardArrowUpIcon/></a>
             <Fade duration={1000} delay={500}>
             <Home3/>
