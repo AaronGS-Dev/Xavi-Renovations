@@ -23,8 +23,8 @@ const Home = () => {
           </div>
           <div id='home2' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] bg-[url("../image/Home2.jpg")] 
           bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col items-center justify-between '>
-            <a href='#home1'><KeyboardArrowUpIcon/></a>
-            <Slide>
+            <Slide >
+          <a href='#home1'><KeyboardArrowUpIcon/></a>
             <Home2/>
             </Slide>
             <a href='#home3' ><KeyboardArrowDownIcon/></a>
