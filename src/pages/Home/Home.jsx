@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <main id='mainHome' className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full  overflow-y-scroll relative">
-          <div id='home1' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] bg-[url("../image/Home1.jpg")] 
-          bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center  flex flex-col items-center justify-between'>
+          <div id='home1' 
+          className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col items-center justify-between'
+          >
         <div></div>
           <Home1/>
           <div className='bottom-0'>

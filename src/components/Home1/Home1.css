@@ -1,17 +1,18 @@
 #slider{
-    aspect-ratio: 10 / 16;
-    width: 300px;
-    position: relative;
     display: flex;
-    overflow: scroll;
+    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+
+    border-radius:2px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #slider img{
-    width: 100vw;
-    left: 0;
-    position:sticky;
-    object-fit: cover;
-    border-radius: 5px;
-    scroll-snap-align: center;
+width: 100%;
+object-fit: cover;
+scroll-snap-align: center;
 }
