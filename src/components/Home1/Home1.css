@@ -6,8 +6,8 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
-    border-radius:2px;
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius:3px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.7);
 
 }
 

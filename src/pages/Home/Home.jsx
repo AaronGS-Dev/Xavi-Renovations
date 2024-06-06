@@ -13,10 +13,7 @@ const Home = () => {
   return (
     <main id='mainHome' className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full  overflow-y-scroll relative">
-          <div id='home1' 
-          className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col items-center justify-between'
-          >
-        <div></div>
+          <div id='home1' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col  justify-between'>
           <Home1/>
           <div className='bottom-0'>
     <a href='#home2' className=''><KeyboardArrowDownIcon/></a>
