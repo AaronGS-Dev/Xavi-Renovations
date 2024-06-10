@@ -1,7 +1,7 @@
 {
   "languages": {
     "english": "English",
-    "spanish": "Spanish"
+    "spanish": "Español"
   },
   "subtitle" : "General renovations",
   "header": {
@@ -41,5 +41,23 @@
     "second": "The team creates an adequate and professional advice in a renovation plan.",
     "third": "All work and costs can be planned based on the renovation plan",
     "fourth": "After the client's approval, the renovation will start."
-  }
+  },
+  "home": {
+    "ourservices": "We offer the next services",
+    "first": "Small renovations",
+    "second": "Big renovations",
+    "third": "Finesse carpentry",
+    "fourth": "Safe electrical work",
+    "fifth": "Thorough plumbing"
+  },
+  "home2": {
+    "first": "We like to think with you and pay attention to your project",
+    "second": "You will have only one contact person who will communicate with you in an open and transparent way",
+    "third": "We provide you with a full written quotation",
+    "fourth": "In all our projects we pay attention to craftsmanship and detail",
+    "fifth": "All the material we use is of the highest quality",
+    "sixth": "We are also there for you after completion",
+    "seventh": "Professionals who are passionate about their work",
+    "eighth": "Good value for money for any job"
+  }   
 }

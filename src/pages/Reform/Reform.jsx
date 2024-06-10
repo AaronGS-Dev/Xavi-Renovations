@@ -98,16 +98,15 @@ const Reform = () => {
 
   return (
     <div className='h-full w-full flex items-center justify-center'>
-        <div className='h-[95%] w-[80%] flex flex-col-reverse 
-                        xl:flex-row items-center xl:justify-evenly overflow-auto gap-2'>
+        <div className='h-[95%] w-[80%] flex flex-col-reverse justify-evenly
+                        xl:flex items-center xl:justify-evenly overflow-auto gap-2'>
             <div id='reform-photo-display' className='h-[70%] w-[90%]
                                                       xl:h-[95%] xl:w-[70%] flex flex-wrap justify-center overflow-auto gap-2 content-start'>
                 {showPhotos()}
             </div>
-            <div className='h-[30%] 
-                            xl:w-[25%] xl:h-[95%] '>
-              <h1 className='h-1/5'>{handleNameLang()}</h1>
-              <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p>
+            <div className='xl:w-[25%]'>
+              <h1 className='h-1/5 text-center'>{handleNameLang()}</h1>
+              {/* <p>Descripcion que tendremos que poner en el JSON. Lorem ipsum bla bla bla</p> */}
             </div>
         </div>
         {imageView && (

@@ -7,8 +7,10 @@ import Home3 from '../../components/Home3/Home3.jsx';
 import { Fade, Slide } from "react-awesome-reveal";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useTranslation } from 'react-i18next';
 const Home = () => {
   const { setActiveLink, activeLink } = useActiveLink();
+  const { t } = useTranslation();
   setActiveLink('/') 
   return (
     <main id='mainHome' className='h-full w-full' >

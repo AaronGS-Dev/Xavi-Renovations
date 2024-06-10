@@ -1,6 +1,6 @@
 {
     "languages": {
-      "english": "Inglés",
+      "english": "English",
       "spanish": "Español"
     },
     "subtitle" : "Reformas generales",
@@ -41,6 +41,24 @@
       "second": "El equipo crea un asesoramiento adecuado y profesional en un plan de reforma.",
       "third": "Todos los trabajos y costes se pueden planificar basándose en el plan de reforma.",
       "fourth": "Después de la aprobación del cliente, se iniciará la reforma."
-    }
+    },
+    "home": {
+      "ourservices": "Ofrecemos los siguientes servicios",
+      "first": "Pequeños reformas",
+      "second": "Grandes reformas",
+      "third": "Hermosa carpintería",
+      "fourth": "Instalacion electrica segura",
+      "fifth": "Fontaneria minuciosa"
+    },
+    "home2": {
+      "first": "Nos gusta pensar con usted y prestar atención a su proyecto.",
+      "second": "Tendrá un único interlocutor que se comunicará con usted de forma abierta y transparente.",
+      "third": "Le ofrecemos un presupuesto completo por escrito.",
+      "fourth": "En todos nuestros proyectos se presta atención a la artesanía y el detalle.",
+      "fifth": "Todo el material que utilizamos es de primera calidad.",
+      "sixth": "También estamos a su disposición tras la finalización.",
+      "seventh": "Profesionales apasionados por su trabajo.",
+      "eighth": "Buena relación calidad-precio para cualquier trabajo."
+    }   
   }
   

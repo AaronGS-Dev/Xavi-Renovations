@@ -57,7 +57,7 @@ const OurProcess = () => {
     
     return (
         <div className='h-full w-full flex flex-col items-center justify-center'>
-            <div className='h-[90%] w-[80%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg")] flex justify-center items-center'>
+            <div className='h-[90%] w-[80%] bg-[url("../image/Home2.jpg")] flex justify-center items-center'>
                 <div className='h-[90%] w-[70%] bg-white bg-opacity-80 flex flex-col items-center gap-4 p-8'>
                     <h1 className='text-4xl'>{t('process.title')}</h1>
                     <p className='w-[80%] text-[20px]'>{t('process.description')}</p>

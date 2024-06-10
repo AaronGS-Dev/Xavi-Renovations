@@ -13,7 +13,9 @@ export const Menu = () => {
 
     return (
             <select defaultValue={i18n.language} onChange={onChangeLang} >
-                        <option value={'en'}>{t('languages.english')}</option>
+                        <option value={'en'}>
+                            {t('languages.english')}
+                        </option>
                         <option value={'es'}>{t('languages.spanish')}</option>
             </select>
     )
