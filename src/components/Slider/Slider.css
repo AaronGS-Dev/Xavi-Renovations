@@ -1,3 +1,20 @@
+#slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%; /* Asegúrate de ajustar esto al ancho que necesites */
+}
+
+#slider img {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
 #slider::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
+
+/* Firefox specific scrollbar removal */
+#slider {
+  scrollbar-width: none;
+}
