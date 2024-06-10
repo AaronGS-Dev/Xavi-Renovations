@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className='h-5/6'>
+      <div className='h-5/6 flex justify-center'>
         <Outlet/>
       </div>
     </>

@@ -6,6 +6,7 @@ import Reform from "../pages/Reform/Reform";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import OurProcess from "../pages/OurProcess/OurProcess";
+import Design from "../pages/Design/Design";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/process',
                 element: <OurProcess/>
+            },
+            {
+                path: '/design',
+                element: <Design/>
             }
         ]
     }
