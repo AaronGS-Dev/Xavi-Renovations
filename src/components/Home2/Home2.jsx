@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Home2 = () => {
   const { t } = useTranslation();
   return (
-    <main>
+    <main className=''>
       <div id='service' className='bg-white bg-opacity-80 flex flex-col text-center w-4/5 h-full rounded transform translate-x-16 pb-4'>
         <div>
           <h1 className='p-6'>{t('home.ourservices')}</h1>
