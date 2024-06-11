@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             <img src="../public/image/logo2.png" className='h-full' />  
         </div>
-        <div className='h-2/5 xl:w-[50%] self-center flex flex-wrap justify-around'>
-            <button className={activeLink === '/' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/')}>{t('header.home')}</button>
-            <button className={activeLink === '/ourwork' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
-            <button className={activeLink === '/about' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/about')}>{t('header.about')}</button>
-            <button className={activeLink === '/process' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/process')}>{t('header.process')}</button>
-            <button className={activeLink === '/contact' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/contact')}>{t('header.design')}</button>
-            <button className={activeLink === '/contact' ? 'font-bold border-4' : 'border-4'} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
+        <div className='h-2/5 xl:w-[60%] self-center flex flex-wrap justify-around'>
+            <button className={activeLink === '/' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/')}>{t('header.home')}</button>
+            <button className={activeLink === '/ourwork' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
+            <button className={activeLink === '/about' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/about')}>{t('header.about')}</button>
+            <button className={activeLink === '/process' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/process')}>{t('header.process')}</button>
+            <button className={activeLink === '/design' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/design')}>{t('header.design')}</button>
+            <button className={activeLink === '/contact' ? 'font-bold w-40' : 'w-40'} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
             <Menu/>
         </div>
     </div>

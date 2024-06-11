@@ -73,7 +73,7 @@ const Reform = () => {
       setSelectedPhoto(reform.photos[nextIndex]);
     }
     
-    const showPhotos= () => {
+    const showPhotos = () => {
         if (reform && reform.photos) {
             const result = reform.photos.map((photo, index) => {
               return (
