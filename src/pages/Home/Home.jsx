@@ -25,9 +25,8 @@ const Home = () => {
             <a href='#home1'><KeyboardArrowUpIcon/></a>
             <div className='h-[100%] xl:h-[100%] w-[90%] xl:w-[90%] bg-[url("../image/Home2.jpg")] 
             bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col items-center justify-center'>
-              <Slide >
+              {/* <Slide ></Slide>  */}
               <Home2/>
-              </Slide> 
             </div>
             <div>
              <a href='#home3' ><KeyboardArrowDownIcon/></a>  
