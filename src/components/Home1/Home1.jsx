@@ -14,21 +14,11 @@ const Home1 = () => {
   };
 
   return (
-    <main className='flex justify-evenly mt-10'>
-      <div>
-        <div className='flex justify-center'>
-        <h1>Xavi Renovaties</h1>
-        </div>
-        <div className='h-[90%] xl:h-[90%] w-[90%] xl:w-[90%] flex flex-col gap-10 '>
-          <div className='mt-10'>
-            <p>Descubre nuestras obras más destacadas y la calidad que nos define.</p>
-            <button id='button' onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
-          </div>
-          <div>
-            <p>Explora los proyectos que hemos llevado a cabo con pasión y dedicación.</p>
-            <button id='button' onClick={() => handleClick('/design')}>{t('header.design')}</button>
-          </div>
-        </div>
+    <main className='h-[100%] w-[100%] flex justify-evenly items-center'>
+      <div className='w-[40%] h-[80%] bg-slate-200 bg-opacity-80 flex flex-col items-center gap-4 p-16 text-xl'>
+      <h1>Xavi Renovaties-General Renovations</h1>
+        <p> XaviRenovaties es una empresa consolidada en el sector de la reforma integral desde hace más de 15 años. Especializada y dedicada a la reforma de viviendas de todo tipo, proyectos de interiores, locales, chalets, naves, garajes y comunidades de propietarios.</p>
+        <p>¿Listo para comenzar tu próxima obra? Contáctanos y hagamos realidad tu visión hoy mismo.</p>
       </div>
    
       <div>
