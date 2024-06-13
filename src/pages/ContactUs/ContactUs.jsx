@@ -115,7 +115,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className='xl:h-[33%] pl-8 pt-4 '>
-                        <h2>Redes Sociales</h2>
+                        {/* <h2>Redes Sociales</h2> */}
                     </div>
                 </div>
             </div>

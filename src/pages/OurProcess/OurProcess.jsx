@@ -60,14 +60,14 @@ const OurProcess = () => {
             <div className='h-[90%] w-[80%] bg-[url("../image/Home2.jpg")] flex justify-center items-center'>
                 <div className='h-[90%] w-[70%] bg-white bg-opacity-80 flex flex-col items-center gap-4 p-8'>
                     <h1 className='text-4xl'>{t('process.title')}</h1>
-                    <p className='w-[80%] text-[20px]'>{t('process.description')}</p>
+                    <p className='w-[80%] text-2xl'>{t('process.description')}</p>
                     <div className='h-full w-[80%] flex flex-col justify-evenly'>
                         <div className='flex relative  z-10 h-[50px] '>
                             <div className={`absolute ${isClicked ? 'left-[0%]' : 'left-[50%]'} transition-all duration-1000`}>
                                 <Filter1Icon sx={{ fontSize: 50 }}/>
                             </div>
                             {textAppear && 
-                            <div className='absolute left-[10%] flex items-center h-full'>
+                            <div className='absolute left-[10%] flex items-center h-full text-xl'>
                                 <StaggerText>
                                     {t('process.first')}
                                 </StaggerText>
@@ -78,7 +78,7 @@ const OurProcess = () => {
                                 <Filter2Icon sx={{ fontSize: 50 }}/>
                             </div>
                             {textAppear2 && 
-                            <div className='absolute left-[10%] flex items-center h-full'>
+                            <div className='absolute left-[10%] flex items-center h-full text-xl'>
                                 <StaggerText>
                                     {t('process.second')}
                                 </StaggerText>
@@ -89,7 +89,7 @@ const OurProcess = () => {
                                 <Filter3Icon sx={{ fontSize: 50 }}/>
                             </div>
                             {textAppear3 && 
-                            <div className='absolute left-[10%] flex items-center h-full'>
+                            <div className='absolute left-[10%] flex items-center h-full text-xl'>
                                 <StaggerText>
                                     {t('process.third')}
                                 </StaggerText>
@@ -100,7 +100,7 @@ const OurProcess = () => {
                                 <Filter4Icon sx={{ fontSize: 50 }}/>
                             </div>
                             {textAppear4 && 
-                            <div className='absolute left-[10%] flex items-center h-full'>
+                            <div className='absolute left-[10%] flex items-center h-full text-xl'>
                                 <StaggerText>
                                     {t('process.fourth')}
                                 </StaggerText>
