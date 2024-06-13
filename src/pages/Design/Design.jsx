@@ -40,11 +40,14 @@ const Design = () => {
       
     return (
         <div className='h-full w-[90%] flex justify-center items-center'>
-            <div className='h-full w-2/6 flex justify-center items-center px-8 text-3xl'>{t('design.text')}</div>
+            <div className='h-full w-2/6 flex flex-col items-center mt-80 gap-4 px-8 text-xl'>
+                <h1>{t('design.title')}</h1>
+                <p>{t('design.text')}</p>
+            </div>
             <div className='h-full w-4/6 flex justify-center items-center'>
-                <div className='h-[80%] w-[90%] flex'>
-                    <div className='w-[90%] flex justify-center items-center'>
-                        <img src={selectedImage} alt="Selected Design" className='max-w-[80%] h-auto' />
+                <div className='h-[80%] w-[90%] flex '>
+                    <div className='w-[90%] flex justify-center items-center '>
+                        <img src={selectedImage} alt="Selected Design" className='max-w-[80%] h-auto shadow-2xl' />
                     </div>
                     <div id='minis' className='w-[20%] overflow-y-auto h-full'>
                         {showDesigns()}
