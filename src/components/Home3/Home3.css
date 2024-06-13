@@ -3,9 +3,10 @@
   overflow: hidden;
   color: #18181a;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 15px;
-  padding: 18px 48px 17px;
+  padding: 18px 2px;
+  width: 40%;
   text-decoration: none;
   cursor: pointer;
   background: rgb(254 240 138);

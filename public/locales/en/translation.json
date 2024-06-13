@@ -42,23 +42,14 @@
     "third": "All work and costs can be planned based on the renovation plan",
     "fourth": "After the client's approval, the renovation will start."
   },
-  "home": {
-    "ourservices": "We offer the next services",
-    "first": "Small renovations",
-    "second": "Big renovations",
-    "third": "Finesse carpentry",
-    "fourth": "Safe electrical work",
-    "fifth": "Thorough plumbing"
+  "home3": {
+    "title": "Interior Design and Renovation Projects.",
+    "text1": "XaviRenovaties is a consolidated company in the sector of integral reform for several years. Specialised and dedicated to the renovation of all types of homes, interior projects, premises, villas, warehouses, garages and homeowners' associations.",
+    "text2": "Ready to start your next project? Contact us and let's make your vision a reality today."
   },
   "home2": {
-    "first": "We like to think with you and pay attention to your project",
-    "second": "You will have only one contact person who will communicate with you in an open and transparent way",
-    "third": "We provide you with a full written quotation",
-    "fourth": "In all our projects we pay attention to craftsmanship and detail",
-    "fifth": "All the material we use is of the highest quality",
-    "sixth": "We are also there for you after completion",
-    "seventh": "Professionals who are passionate about their work",
-    "eighth": "Good value for money for any job"
+    "title": "Discover our works and designs.",
+    "text": "In every project and renovation, we create environments that reflect your style and personality. From interior design to complete renovations, our team is dedicated to bringing your ideas to life. Discover how our projects stand out for their innovation and functionality. With a unique approach to every detail, we create spaces that inspire and transform. Explore our work and let yourself be carried away by creativity."
   },
   "design": {
     "title": "Customized designs",

@@ -15,10 +15,10 @@ const AboutUs = () => {
             <div className='h-[50%] xl:h-[90%] w-[95%] xl:w-[60%] bg-[url("../image/Home4.png")] bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex justify-center items-center'>
             </div>
             <div className='h-[50%] xl:h-[90%] w-[95%] xl:w-[40%]'>
-                <div className='h-[20%] w-full pl-8 pt-4 flex flex-col justify-center gap-4'>
+                <div className='h-[20%] w-full pl-8 pt-4 flex flex-col justify-center gap-4 text-xl'>
                     <h1>{t('about.title')}</h1>
                 </div>
-                <div className='h-[80%] w-[95%] xl:w-[70%] pl-8 pt-4  flex flex-col gap-4'>
+                <div className='h-[80%] w-[95%] xl:w-[70%] pl-8 pt-4 flex flex-col gap-4 text-xl'>
                     <p>{t('about.description')}</p>
                 </div>
             </div>
