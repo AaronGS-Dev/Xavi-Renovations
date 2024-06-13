@@ -16,3 +16,13 @@
 object-fit: cover;
 scroll-snap-align: center;
 }
+
+#button{
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 010px rgba(0, 0, 0, .8);
+    border: 2px solid #0000;
+    background: 
+    /* linear-gradient(black, #222) padding-box, */
+    linear-gradient(#09f, white) border-box;
+}
