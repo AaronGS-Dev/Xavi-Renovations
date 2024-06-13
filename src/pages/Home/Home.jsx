@@ -33,15 +33,14 @@ const Home = () => {
              <a href='#home3' ><KeyboardArrowDownIcon/></a>  
             </div>
             </div>
-            <div id='home3' className=' h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col justify-center items-center'>
-              <a href='#home2'><KeyboardArrowUpIcon/></a>
-          <div className=' h-[90%] xl:h-[90%] w-[90%] xl:w-[90%] bg-[url("../image/Home3.jpg")] 
-          bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col justify-center items-center'>
-            <Fade duration={1000} delay={500}>
+        <div id='home3' className=' h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col justify-center items-center'>
+          <a href='#home2'><KeyboardArrowUpIcon/></a>
+          <div className=' h-[90%] xl:h-[90%] w-[90%] xl:w-[90%] bg-[url("../image/Home1.jpg")] 
+            bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center'>
+            {/* <Fade duration={1000} delay={500}>            </Fade> */}
             <Home3/>
-            </Fade>
           </div>
-          </div>
+        </div>
       </div>
     </main> 
   );
