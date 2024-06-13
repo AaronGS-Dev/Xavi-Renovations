@@ -23,7 +23,7 @@ const Home2 = () => {
           nuestro equipo se dedica a hacer realidad tus ideas.
           Descubre cómo nuestros proyectos destacan por su innovación y funcionalidad. Con un enfoque único en cada detalle, logramos espacios que inspiran y transforman.
           Explora nuestros trabajos y déjate llevar por la creatividad.</p> 
-        <div className='flex gap-16'>
+        <div className='flex gap-16 '>
         <button  onClick={() => handleClick('/ourwork')} className="button-57" role="button"><span class="text">{t('header.works')}</span><span>{t('header.works')}</span></button>
 
         <button  onClick={() => handleClick('/design')} className="button-57" role="button"><span class="text">{t('header.design')}</span><span>{t('header.design')}</span></button>
