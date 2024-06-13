@@ -21,7 +21,7 @@ const Header = () => {
                 <h1 className='text-4xl'>XaviRenovaties</h1>
                 <h2>{t('subtitle')}</h2>
             </div>
-            <img src="../public/image/logo2.png" className='h-full' />  
+            <img src="../image/logo2.png" className='h-full' />  
         </div>
         <div className='h-2/5 xl:w-[60%] self-center flex flex-wrap justify-around'>
             <button className={activeLink === '/' ? 'font-bold w-40 text-lg' : 'w-40 text-lg'} onClick={() => handleClick('/')}>{t('header.home')}</button>
