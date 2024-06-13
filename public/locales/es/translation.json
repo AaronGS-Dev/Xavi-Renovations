@@ -42,23 +42,14 @@
       "third": "Todos los trabajos y costes se pueden planificar basándose en el plan de reforma.",
       "fourth": "Después de la aprobación del cliente, se iniciará la reforma."
     },
-    "home": {
-      "ourservices": "Ofrecemos los siguientes servicios",
-      "first": "Pequeños reformas",
-      "second": "Grandes reformas",
-      "third": "Hermosa carpintería",
-      "fourth": "Instalacion electrica segura",
-      "fifth": "Fontaneria minuciosa"
+    "home3": {
+      "title": "Proyectos de Interiorismo y Reforma.",
+      "text1": "XaviRenovaties es una empresa consolidada en el sector de la reforma integral desde varios años. Especializada y dedicada a la reforma de viviendas de todo tipo, proyectos de interiores, locales, chalets, naves, garajes y comunidades de propietarios.",
+      "text2": "¿Listo para comenzar tu próxima obra? Contáctanos y hagamos realidad tu visión hoy mismo."
     },
     "home2": {
-      "first": "Nos gusta pensar con usted y prestar atención a su proyecto.",
-      "second": "Tendrá un único interlocutor que se comunicará con usted de forma abierta y transparente.",
-      "third": "Le ofrecemos un presupuesto completo por escrito.",
-      "fourth": "En todos nuestros proyectos se presta atención a la artesanía y el detalle.",
-      "fifth": "Todo el material que utilizamos es de primera calidad.",
-      "sixth": "También estamos a su disposición tras la finalización.",
-      "seventh": "Profesionales apasionados por su trabajo.",
-      "eighth": "Buena relación calidad-precio para cualquier trabajo."
+      "title": "Descubre nuestras obras y diseños.",
+      "text": "En cada obra y remodelación, creamos ambientes que reflejan tu estilo y personalidad. Desde diseño de interiores hasta renovaciones completas, nuestro equipo se dedica a hacer realidad tus ideas. Descubre cómo nuestros proyectos destacan por su innovación y funcionalidad. Con un enfoque único en cada detalle, logramos espacios que inspiran y transforman. Explora nuestros trabajos y déjate llevar por la creatividad."
     },
     "design": {
       "title": "Diseños personalizados",
