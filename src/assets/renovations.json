@@ -1,8 +1,10 @@
 [
     {
         "id":1,
-        "name_es":"Reforma 1",
-        "name_en":"Renovation 1",
+        "name_es":"Cuarto de baño, La Haya.",
+        "name_en":"Bathroom, La Haya.",
+        "title_es": "Reforma cuarto de baño, La Haya.",
+        "title_en": "Bathroom renovation, La Haya.",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072685/XaviRenovaties/Reforma%201/f860caee-e8d1-46be-b0c2-07c31fedf0d5_y5o7pw.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1714072688/XaviRenovaties/Reforma%201/17ccf6fd-d193-415e-a6b7-80a30439def3_qnawta.jpg",
@@ -24,8 +26,10 @@
     },
     {
         "id":2,
-        "name_es":"Reforma 2",
-        "name_en":"Renovation 2",
+        "name_es":"Reforma completa, Ámsterdam.",
+        "name_en":"Complete renovation, Amsterdam.",
+        "title_es": "Reforma completa, Ámsterdam.",
+        "title_en": "Complete renovation, Amsterdam.",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426798/XaviRenovaties/Reforma%202/IMG_1562-scaled_wudies.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715426799/XaviRenovaties/Reforma%202/IMG_1558-scaled_aunq5f.jpg",
@@ -41,8 +45,10 @@
     },
     {
         "id":3,
-        "name_es":"Reforma 3",
-        "name_en":"Renovation 3",
+        "name_es":"Habitación, La Haya.",
+        "name_en":"Bedroom shower, La Haya.",
+        "title_es": "Habitación con cuarto de ducha, La Haya.",
+        "title_en": "Bedroom with shower, La Haya,",
         "cover": "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595696/XaviRenovaties/Reforma%203/IMG_20240306_111028_rkmiyt.jpg",
         "photos": [
             "https://res.cloudinary.com/dytjoh7oh/image/upload/v1715595695/XaviRenovaties/Reforma%203/IMG_20240116_115847_sblqpo.jpg",

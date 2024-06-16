@@ -90,9 +90,9 @@ const Reform = () => {
     
     const handleNameLang = () => {
       if (langCode === 'es') {
-        return reform.name_es;
+        return reform.title_es;
       } else if (langCode === 'en') {
-        return reform.name_en
+        return reform.title_en
       }
     }
 
