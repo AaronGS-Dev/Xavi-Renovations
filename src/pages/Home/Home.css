@@ -20,18 +20,18 @@
     #home2-large {
         display: none;
     }
-
-    #home2-small {
-
+    #home3-large {
+        display: none;
     }
+
 }
 
 
 @media (width >= 1000px) {
-    #home2-large {
-    }
-
     #home2-small {
+        display: none;
+    }
+    #home3-small {
         display: none;
     }
 }
