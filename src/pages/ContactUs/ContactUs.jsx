@@ -51,7 +51,7 @@ const ContactUs = () => {
                             xl:w-[75%] xl:flex-row xl:overflow-y-hidden'>
                 <div className='w-full bg-[url(https://res.cloudinary.com/dytjoh7oh/image/upload/v1712826578/XaviRenovaties/asdfad_zwuhoa.jpg)] flex justify-center items-center
                             xl:w-[60%] xl:h-[90%]'>
-                    <form onSubmit={handleSubmit} className='h-[90%] w-[65%] bg-yellow-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
+                    <form onSubmit={handleSubmit} className='h-[90%] w-[85%] xl:w-[65%] bg-yellow-200 bg-opacity-90 flex flex-col p-8 items-center gap-12'>
                         <h1 className='flex justify-center'>{t('contact.form.title')}</h1>
                         <input
                             type="text"
@@ -59,7 +59,7 @@ const ContactUs = () => {
                             value={formData.name}
                             onChange={handleChange}
                             placeholder={t('contact.form.name')}
-                            className='w-[70%] h-[30px] rounded pl-2'
+                            className='w-[90%] xl:w-[70%] h-[30px] rounded pl-2'
                         />
                         <input
                             type="text"
@@ -67,7 +67,7 @@ const ContactUs = () => {
                             value={formData.phone}
                             onChange={handleChange}
                             placeholder={t('contact.form.phone')}
-                            className='w-[70%] h-[30px] rounded pl-2'
+                            className='w-[90%] xl:w-[70%] h-[30px] rounded pl-2'
                         />
                         <input
                             type="text"
@@ -75,19 +75,19 @@ const ContactUs = () => {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder={t('contact.form.email')}
-                            className='w-[70%] h-[30px] rounded pl-2'
+                            className='w-[90%] xl:w-[70%] h-[30px] rounded pl-2'
                         />
                         <textarea
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
                             placeholder={t('contact.form.message')}
-                            className='w-[70%] h-[100px] rounded pl-2 resize-none'
+                            className='w-[90%] xl:w-[70%] h-[100px] rounded pl-2 resize-none'
                         />
                         <button type="submit" className='w-36 h-10 rounded-2xl bg-[#F2E500] shadow-md'>{t('contact.form.submit')}</button>
                     </form>
                 </div>
-                <div className='xl:h-[90%] w-[40%]'>
+                <div className='xl:h-[90%] w-[80%] xl:w-[40%]'>
                     <div className='xl:h-[33%] pl-8 pt-4 flex flex-col gap-4'>
                         <h2>{t('contact.info')}</h2>
                         <div id='grid-whatsApp'>
