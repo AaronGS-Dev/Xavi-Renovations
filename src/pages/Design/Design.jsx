@@ -42,7 +42,7 @@ const Design = () => {
         <div className='h-full w-[90%] flex justify-center items-center'>
             <div className='h-full w-2/6 flex flex-col items-center mt-80 gap-4 px-8 text-xl'>
                 <h1 className='text-4xl mb-8'>{t('design.title')}</h1>
-                <p>{t('design.text')}</p>
+                <p className='xl:text-2xl'>{t('design.text')}</p>
             </div>
             <div className='h-full w-4/6 flex justify-center items-center'>
                 <div className='h-[80%] w-[90%] flex '>
