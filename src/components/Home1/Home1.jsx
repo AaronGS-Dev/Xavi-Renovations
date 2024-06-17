@@ -14,14 +14,13 @@ const Home1 = () => {
   };
 
   return (
-    <main className='h-[100%] w-[100%] flex justify-evenly items-center'>
-      <div className='w-[40%] h-[80%] flex flex-col items-center gap-4 p-16 text-xl'>
-      <h1 className='text-4xl'>XaviRenovaties</h1>
+    <main className='h-[100%] w-[100%] flex flex-col xl:flex-row xl:justify-evenly items-center'>
+      <div className='w-[90%] h-[50%] xl:w-[40%] xl:h-[80%] flex flex-col items-center xl:gap-4 xl:p-16 xl:text-xl'>
+        <h1 className='xl:text-4xl'>XaviRenovaties</h1>
         <p>{t("home3.text1")}</p>
         <button onClick={() => handleClick('/about')} class="button-57" role="button"><span class="text">{t('header.about')}</span><span>{t('header.about')}</span></button>
       </div>
-   
-      <div>
+      <div className='h-[50%] xl:h-auto'>
         <Slider/>
       </div>
 

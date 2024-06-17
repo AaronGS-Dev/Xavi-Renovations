@@ -23,15 +23,20 @@ const Home = () => {
       </div>
           <div id='home2' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col items-center justify-between '>
             <a href='#home1'><KeyboardArrowUpIcon/></a>
-            <div className='h-[100%] xl:h-[100%] w-[90%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home2_scwnkq.jpg")] 
+            <div id="home2-large" className='h-[100%] xl:h-[100%] w-[100%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home2_scwnkq.jpg")] 
             bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col items-center justify-center'>
               {/* <Slide ></Slide>  */}
               <Home2/>
             </div>
+
+            <div id="home2-small">
+              <Home2/>
+            </div>
+            
             <div>
              <a href='#home3' ><KeyboardArrowDownIcon/></a>  
             </div>
-            </div>
+          </div>
         <div id='home3' className=' h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col justify-center items-center'>
           <a href='#home2'><KeyboardArrowUpIcon/></a>
           <div className=' h-[90%] xl:h-[90%] w-[90%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home1_fexwvl.jpg")] 

@@ -1,0 +1,11 @@
+@media (width < 1000px) {
+    #div-aux {
+        display: none;
+    }
+}
+
+@media (width >= 1000px) {
+    #image-home2-small {
+        display: none;
+    }
+}

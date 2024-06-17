@@ -13,3 +13,26 @@
 }
 
 
+@media (width < 1000px) {
+    a {
+        display: none;
+    }
+    #home2-large {
+        display: none;
+    }
+
+    #home2-small {
+
+    }
+}
+
+
+@media (width >= 1000px) {
+    #home2-large {
+    }
+
+    #home2-small {
+        display: none;
+    }
+}
+
