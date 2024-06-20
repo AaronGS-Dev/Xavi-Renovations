@@ -110,13 +110,13 @@ const Reform = () => {
             </div>
         </div>
         {imageView && (
-                <div className='absolute inset-0 flex items-center justify-between bg-black bg-opacity-70' onClick={handleClosePreview}>
-                  <KeyboardArrowLeftIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
+                <div className='fixed inset-0 z-50 flex items-center justify-between bg-black bg-opacity-70' onClick={handleClosePreview}>
+                  <KeyboardArrowLeftIcon className='iconss' sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleLeftClick()
                     }}/>
-                  <img src={selectedPhoto} className='h-[90%] xl:h-full' alt="" />
-                  <KeyboardArrowRightIcon sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
+                  <img src={selectedPhoto} className='max-h-[70%] xl:max-h-full max-w-full object-contain sm:max-h-full' alt="" />
+                  <KeyboardArrowRightIcon className='iconss' sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleRightClick()
                     }}/>

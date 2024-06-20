@@ -1,3 +1,9 @@
 #reform-photo-display::-webkit-scrollbar {
     display: none;
   }
+/* 
+@media (width < 1000px) {
+  .iconss {
+    display: none;
+  }
+} */
