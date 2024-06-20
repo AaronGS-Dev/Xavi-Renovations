@@ -14,29 +14,31 @@ const Home = () => {
   setActiveLink('/') 
   return (
     <main id='mainHome' className='h-full w-full' >
-      <div id='containerHome' className="flex flex-col h-full overflow-y-scroll relative">
-          <div id='home1' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col justify-between'>
-          <Home1/>
+      <div id='containerHome' className="flex flex-col h-full items-center overflow-y-scroll relative">
+        <div id='home1' className='h-[100%] xl:h-[90%] w-[100%] flex flex-col justify-between items-center'>
+          <div id="home2-large" className='bg-gray-200 h-full xl:w-[90%] flex justify-center'>
+            <Home1/>
+          </div>
           <div className='bottom-0 flex flex-col items-center justify-between'>
             <a href='#home2' className=''><KeyboardArrowDownIcon/></a>
           </div>
-      </div>
-          <div id='home2' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col items-center justify-between '>
-            <a href='#home1'><KeyboardArrowUpIcon/></a>
-            <div id="home2-large" className='h-[100%] xl:h-[100%] w-[100%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home2_scwnkq.jpg")] 
+        </div>
+        <div id='home2' className='h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col items-center justify-between '>
+          <a href='#home1'><KeyboardArrowUpIcon/></a>
+          <div id="home2-large" className='h-[100%] xl:h-[100%] w-[100%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home2_scwnkq.jpg")] 
             bg-contain bg-no-repeat bg-center xl:bg-cover xl:bg-center flex flex-col items-center justify-center'>
               {/* <Slide ></Slide>  */}
               <Home2/>
-            </div>
-
-            <div id="home2-small">
-              <Home2/>
-            </div>
-            
-            <div>
-             <a href='#home3' ><KeyboardArrowDownIcon/></a>  
-            </div>
           </div>
+
+          <div id="home2-small">
+              <Home2/>
+          </div>
+            
+          <div>
+             <a href='#home3' ><KeyboardArrowDownIcon/></a>  
+          </div>
+        </div>
         <div id='home3' className=' h-[100%] xl:h-[100%] w-[100%] xl:w-[100%] flex flex-col justify-center items-center'>
           <a href='#home2'><KeyboardArrowUpIcon/></a>
           <div id='home3-large' className=' h-[90%] xl:h-[90%] w-[90%] xl:w-[90%] bg-[url("https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home1_fexwvl.jpg")] 
