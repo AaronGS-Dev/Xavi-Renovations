@@ -1,3 +1,11 @@
 #minis {
     scrollbar-width: none;
   }
+
+
+
+@media (width < 1000px) {
+  #image-display {
+  display: none;
+  }
+}
