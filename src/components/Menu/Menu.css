@@ -1,0 +1,20 @@
+.react-select-container {
+    @apply w-40; /* Ancho: 16rem (64 * 0.25rem) */
+  }
+  
+  .react-select__control {
+    @apply bg-none border border-gray-300 hover:border-gray-400;
+    display: flex;
+  }
+  
+  .react-select__menu {
+    @apply bg-none;
+  }
+  
+  .react-select__option {
+    @apply hover:bg-none flex items-center;
+  }
+  
+  .react-select__option--is-selected {
+    @apply bg-none;
+  }

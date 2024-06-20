@@ -30,7 +30,6 @@ const Header = () => {
             <button className={activeLink === '/process' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/process')}>{t('header.process')}</button>
             <button className={activeLink === '/design' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/design')}>{t('header.design')}</button>
             <button className={activeLink === '/contact' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
-            <Menu/>
         </div>
     </div>
   )
