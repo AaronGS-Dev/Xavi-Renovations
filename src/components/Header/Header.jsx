@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             <img src="../image/logo2.png" className='h-3/6 xl:h-full' />  
         </div>
-        <div className='h-1/5 xl:h-2/5 xl:w-[60%] self-center flex flex-wrap justify-around'>
-            <button className={activeLink === '/' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/')}>{t('header.home')}</button>
-            <button className={activeLink === '/ourwork' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
-            <button className={activeLink === '/about' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/about')}>{t('header.about')}</button>
-            <button className={activeLink === '/process' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/process')}>{t('header.process')}</button>
-            <button className={activeLink === '/design' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/design')}>{t('header.design')}</button>
-            <button className={activeLink === '/contact' ? 'font-bold w:20 px-4 xl:w-40 text-sm xl:text-lg' : 'w:20 px-4 xl:w-40 text-sm xl:text-lg'} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
+        <div className='h-1/5 xl:h-2/5 xl:w-[100%] self-center flex flex-wrap justify-center gap-4'>
+            <button className={activeLink === '/' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/')}>{t('header.home')}</button>
+            <button className={activeLink === '/ourwork' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/ourwork')}>{t('header.works')}</button>
+            <button className={activeLink === '/about' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/about')}>{t('header.about')}</button>
+            <button className={activeLink === '/process' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/process')}>{t('header.process')}</button>
+            <button className={activeLink === '/design' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/design')}>{t('header.design')}</button>
+            <button className={activeLink === '/contact' ? 'font-bold w:20 px-4 xl:w-60 text-sm xl:text-lg' : 'w:20 px-4 xl:w-60 text-sm xl:text-lg'} onClick={() => handleClick('/contact')}>{t('header.contact')}</button>
         </div>
     </div>
   )

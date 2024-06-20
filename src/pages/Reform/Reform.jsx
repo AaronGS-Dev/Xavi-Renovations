@@ -110,7 +110,7 @@ const Reform = () => {
             </div>
         </div>
         {imageView && (
-                <div className='fixed inset-0 z-50 flex items-center justify-between bg-black bg-opacity-70' onClick={handleClosePreview}>
+                <div className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70' onClick={handleClosePreview}>
                   <KeyboardArrowLeftIcon className='iconss' sx={{ fontSize: 50, color: 'white' }} onClick={(e) => {
                     e.stopPropagation();
                     handleLeftClick()

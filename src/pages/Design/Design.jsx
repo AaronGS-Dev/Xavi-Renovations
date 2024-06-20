@@ -39,8 +39,8 @@ const Design = () => {
     }
       
     return (
-        <div className='h-full w-[90%] flex flex-col xl:flex-row justify-center items-center'>
-            <div className='h-[50%] xl:h-full xl:w-2/6 flex flex-col items-center !justify-center xl:justify-start gap-4 px-8 text-xl'>
+        <div className='h-full w-[80%] flex flex-col xl:flex-row justify-center items-center'>
+            <div className='h-[50%] xl:h-full xl:w-2/6 flex flex-col mt-64 items-center xl:justify-start gap-4 px-8 text-xl'>
                 <h1 className='xl:text-4xl mb-8'>{t('design.title')}</h1>
                 <p className='xl:text-2xl'>{t('design.text')}</p>
             </div>
