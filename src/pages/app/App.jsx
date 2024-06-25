@@ -12,7 +12,7 @@ function App() {
       <div className='h-5/6 flex justify-center'>
         <Outlet/>
       </div>
-      <div className="fixed inset-0 bg-none z-10 pointer-events-none flex items-start justify-end m-4">
+      <div id='languages' className="fixed inset-0 bg-none z-10 pointer-events-none flex items-start justify-end m-4">
         <div className='pointer-events-auto'>
           <Menu/>
         </div>

@@ -19,7 +19,7 @@ const Header = () => {
         <div className='h-3/5 flex justify-center items-center cursor-pointer' onClick={() => handleClick('/')}>
             <div className='flex flex-col items-center justify-center'>
                 <h1 className='xl:text-4xl'>XaviRenovaties</h1>
-                <h2 className='text-sm '>{t('subtitle')}</h2>
+                <h2 className='text-sm'>{t('subtitle')}</h2>
             </div>
             <img src="../image/logo2.png" className='h-3/6 xl:h-full' />  
         </div>
