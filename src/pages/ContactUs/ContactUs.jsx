@@ -84,7 +84,7 @@ const ContactUs = () => {
                             placeholder={t('contact.form.message')}
                             className='w-[90%] xl:w-[70%] h-[100px] rounded pl-2 resize-none'
                         />
-                        <button type="submit" className='w-36 h-10 rounded-2xl bg-[#F2E500] shadow-md'>{t('contact.form.submit')}</button>
+                        <button type='submit' class="button-57" role="button"><span class="text">{t('contact.form.submit')}</span><span>{t('contact.form.submit')}</span></button>
                     </form>
                 </div>
                 <div className='xl:h-[90%] w-[80%] xl:w-[40%]'>
