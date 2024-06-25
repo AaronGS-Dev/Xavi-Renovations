@@ -39,17 +39,17 @@ const Design = () => {
     }
       
     return (
-        <div className='h-full w-[80%] flex flex-col xl:flex-row justify-center items-center'>
-            <div className='h-[50%] xl:h-full xl:w-2/6 flex flex-col mt-64 items-center xl:justify-start gap-4 px-8 text-xl'>
-                <h1 className='xl:text-4xl mb-8'>{t('design.title')}</h1>
+        <div className='h-full w-[80%] flex flex-col xl:flex-row xl:justify-center items-center'>
+            <div className='h-[40%] xl:h-full xl:w-2/6 flex flex-col xl:mt-64 items-center xl:justify-start gap-4 px-8 text-xl'>
+                <h1 className='xl:text-4xl xl:mb-8'>{t('design.title')}</h1>
                 <p className='xl:text-2xl'>{t('design.text')}</p>
             </div>
-            <div className='h-[50%] xl:h-full xl:w-4/6 flex justify-center items-center'>
+            <div className='h-[40%] xl:h-full xl:w-4/6 flex justify-center items-center'>
                 <div className='h-full xl:h-[80%] w-[90%] flex '>
                     <div id='image-display' className='w-[90%] flex justify-center items-center '>
                         <img src={selectedImage} alt="Selected Design" className='max-w-[80%] h-auto shadow-2xl' />
                     </div>
-                    <div id='minis' className='xl:w-[20%] overflow-y-auto h-[%100]'>
+                    <div id='minis' className='xl:w-[20%] overflow-y-auto h-[%100] shadow-2xl xl-shadow-none'>
                         {showDesigns()}
                     </div>
                 </div>

@@ -13,7 +13,7 @@
     return (
       <div className='h-[100%] w-[100%] flex flex-col xl:flex-row xl:justify-evenly xl:items-center gap-4'>
         <img id="image-home3-small" className='h-auto w-full' src="https://res.cloudinary.com/dytjoh7oh/image/upload/v1718290910/XaviRenovaties/Public/Home1_fexwvl.jpg" alt=""/>
-        <div id='containerHome3' className='w-full xl:w-[40%] h-[40%] xl:h-[80%] bg-white bg-opacity-80 flex flex-col items-center gap-4 xl:p-16 xl:text-2xl'>
+        <div id='containerHome3' className='w-full xl:w-[40%] h-[40%] xl:h-[80%] bg-white bg-opacity-80 flex flex-col items-center xl:gap-4 xl:p-16 xl:text-2xl'>
           <h1 className='text-lg xl:text-3xl'>{t("home3.title")}</h1>
           <p className='px-4'>{t("home3.text3")}</p>
           <p className='px-4'>{t("home3.text2")}</p>

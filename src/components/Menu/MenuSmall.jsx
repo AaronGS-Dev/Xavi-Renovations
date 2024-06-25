@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Select from 'react-select';
 import './Menu.css'
 
-export const Menu = () => {
+export const MenuSmall = () => {
     const { i18n, t } = useTranslation();
     const { langCode, setLangCode} = useActiveLink();
 
@@ -19,7 +19,6 @@ export const Menu = () => {
             label: (
                 <div className="flex items-center">
                     <img src="image/english.webp" alt="Option 1" className="w-5 h-5 mr-2" />
-                        {t('languages.english')}
                 </div>
             )
         },
@@ -28,7 +27,6 @@ export const Menu = () => {
             label: (
                 <div className="flex items-center">
                     <img src="image/spanish.webp" alt="Option 2" className="w-5 h-5 mr-2" />
-                        {t('languages.spanish')}
                 </div>
             )
         }
@@ -40,7 +38,7 @@ export const Menu = () => {
             options={options}
             onChange={onChangeLang}
             classNamePrefix="react-select"
-            className="react-select-container"
+            className="react-select-container2"
         />
     );
 }

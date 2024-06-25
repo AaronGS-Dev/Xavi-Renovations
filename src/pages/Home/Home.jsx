@@ -15,11 +15,14 @@ const Home = () => {
   return (
     <main id='mainHome' className='h-full w-full' >
       <div id='containerHome' className="flex flex-col h-full items-center overflow-y-scroll relative">
-        <div id='home1' className='h-[100%] xl:h-[90%] w-[100%] flex flex-col justify-between items-center'>
+        <div id='home1' className='h-[100%] xl:h-[90%] w-[100%] flex flex-col xl:justify-between items-center'>
           <div id="home2-large" className='h-full xl:w-[90%] flex justify-center'>
             <Home1/>
           </div>
-          <div className='bottom-0 flex flex-col items-center justify-between'>
+          <div id="home2-small" className='h-full'>
+            <Home1/>
+          </div>
+          <div id='div-flecha' className='bottom-0 flex flex-col items-center justify-between'>
             <a href='#home2' className=''><KeyboardArrowDownIcon/></a>
           </div>
         </div>

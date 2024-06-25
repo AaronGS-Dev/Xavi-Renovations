@@ -1,6 +1,10 @@
 .react-select-container {
     @apply w-40; /* Ancho: 16rem (64 * 0.25rem) */
   }
+
+  .react-select-container2 {
+    @apply w-20; /* Ancho: 16rem (64 * 0.25rem) */
+  }
   
   .react-select__control {
     @apply bg-none border border-gray-300 hover:border-gray-400;

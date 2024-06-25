@@ -3,3 +3,11 @@
         display: none;
     }
 }
+
+
+
+@media (width >= 1000px) {
+    #languages-small {
+        display: none;
+    }
+}

@@ -2,6 +2,9 @@
     #div-aux {
         display: none;
     }
+    #div-flecha {
+        display: none;
+    }
 }
 
 @media (width >= 1000px) {
